@@ -11,18 +11,22 @@ function updatemember(type){
   if (type == 1){
     $("#member-einzeln-weiss").addClass("hidden");
     $("#member-einzeln-blau").removeClass("hidden");
+    $("#tarif").html("30 CHF")
 
   } else if (type == 2){
     $("#member-ehepaar-weiss").addClass("hidden");
     $("#member-ehepaar-blau").removeClass("hidden");
+    $("#tarif").html("40 CHF")
 
   }else if (type == 3){
     $("#member-jurist-weiss").addClass("hidden");
     $("#member-jurist-blau").removeClass("hidden");
+    $("#tarif").html("70 CHF")
 
   }else if (type == 4){
     $("#member-goenner-weiss").addClass("hidden");
     $("#member-goenner-blau").removeClass("hidden");
+    $("#tarif").html("50 CHF")
 
   }
 
