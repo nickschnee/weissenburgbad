@@ -91,7 +91,7 @@ body {
 }
 
 .verein_logo{
-  z-index: 9999;
+  /* z-index: 9999; */
   position:absolute;
   margin-left: 44%;
   margin-top:25%;
@@ -376,7 +376,7 @@ body {
 
 input{
   font-family: Raleway, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 80%;
   height: 100%;
   border: none;
