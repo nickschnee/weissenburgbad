@@ -65,3 +65,8 @@ function showmap(){
   window.location.href = "wandern.html";
 
 }
+
+function verein(){
+  window.location.href = "verein.html";
+
+}
