@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Weissenburgbad - Interaktive Karte</title>
+
+  <link href="https://file.myfontastic.com/pH2BzsoWmoxMYNrptpPH35/icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <!--  <nav>
+    <div class="topnav" id="myTopnav">
+    <a href="/index.html">Home</a>
+    <a href="/entdecken.html">Entdecken</a>
+    <a href="/geschichte.html">Erfahren</a>
+    <a href="/verein.html">Der Verein</a>
+    <a href="/karte.html" clfass="active">Karte</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <!-- <img id="logo" src="WeissenBurgBad_Logo2015_35mm300dpi_150429.jpg" alt="Logo Weissenburgbad" height="40px"> --
+</div>
+</nav> -->
+</header>
+
+
+<div class="flex-container">
+  <div id="left_map">
+
+    <!-- <div>
+    <div>
+    <img id="btnshorttrail" src="images/wandern_weiss.png" alt="Kurzer Weg">
+    <img id="btnmiddletrail" src="images/wandern_gelb.png" alt="Mittellanger Weg">
+    <img id="btnlongtrail" src="images/wandern_rot.png" alt="Langer Weg">
+  </div>
+
+</div> -->
+
+
+<!-- <img id="mapimg" src="images/karte_cutted.png" alt="Karte"> -->
+
+<!-- MAPMAPMAPMAP -->
+
+<div class="map">
+  <!-- <img src="images/karte_cutted.png" alt="" /> -->
+  <img src="images/karte.png" alt="" />
+
+  <div id="pin-wandern-strecke-leicht" class="box-strecke strecke hidden" onclick="">
+
+    <img id="" src="images/wandern_strecke_leicht.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-strecke-mittel" class="box-strecke strecke hidden" onclick="">
+
+    <img id="" src="images/wandern_strecke_mittel.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-strecke-schwer" class="box-strecke strecke hidden" onclick="">
+
+    <img id="" src="images/wandern_strecke_schwer.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-legende" class="box-legende" onclick="">
+
+    <img id="" src="images/legende_blau.png" alt="Legende">
+
+  </div>
+
+
+
+
+
+  <!-- BAHNHOF -->
+
+  <div id="pin-bahnhof-weiss" class="box pin-weiss hidden" onclick="currentSlide(1)">
+
+    <img id="" src="images/icons/zug_weiss_hq.png" alt="Bahnhof Weissenburg">
+
+  </div>
+
+  <div id="pin-bahnhof-blau" class="box pin-blau" onclick="currentSlide(1)">
+
+    <img id="" src="images/icons/zug_blau_hq.png" alt="Bahnhof Weissenburg">
+
+  </div>
+
+  <!-- Brunnen -->
+
+  <div id="pin-brunnen-weiss" class="box pin-weiss" onclick="currentSlide(2)">
+
+    <img id="" src="images/icons/brunnen_weiss_hq.png" alt="Brunnen">
+
+  </div>
+
+  <div id="pin-brunnen-blau" class="box pin-blau hidden" onclick="currentSlide(2)">
+
+    <img id="" src="images/icons/brunnen_blau_hq.png" alt="Brunnen">
+
+  </div>
+
+  <!-- TURBINE -->
+  <div id="pin-turbine-weiss" class="box pin-weiss" onclick="currentSlide(3)">
+
+    <img id="" src="images/icons/turbine_weiss_hq.png" alt="Turbine">
+
+  </div>
+
+  <div id="pin-turbine-blau" class="box pin-blau hidden" onclick="currentSlide(3)">
+
+    <img id="" src="images/icons/turbine_blau_hq.png" alt="Turbine">
+
+  </div>
+
+  <!-- VORDERES BAD -->
+  <div id="pin-vorderesbad-weiss" class="box pin-weiss" onclick="currentSlide(4)">
+
+    <img id="" src="images/icons/vorderesbad_weiss_hq.png" alt="Turbine">
+
+  </div>
+
+  <div id="pin-vorderesbad-blau" class="box pin-blau hidden" onclick="currentSlide(4)">
+
+    <img id="" src="images/icons/vorderesbad_blau_hq.png" alt="Turbine">
+
+  </div>
+
+  <!-- HINTERES BAD -->
+  <div id="pin-hinteresbad-weiss" class="box pin-weiss" onclick="currentSlide(5)">
+
+    <img id="" src="images/icons/hinteresbad_weiss_hq.png" alt="Turbine">
+
+  </div>
+
+  <div id="pin-hinteresbad-blau" class="box pin-blau hidden" onclick="currentSlide(5)">
+
+    <img id="" src="images/icons/hinteresbad_blau_hq.png" alt="Turbine">
+
+  </div>
+
+  <!-- TEUFELSBRÜCKE -->
+  <div id="pin-teufelsbruecke-weiss" class="box pin-weiss" onclick="currentSlide(6)">
+
+    <img id="" src="images/icons/teufelsbruecke_weiss_hq.png" alt="Turbine">
+
+  </div>
+
+  <div id="pin-teufelsbruecke-blau" class="box pin-blau hidden" onclick="currentSlide(6)">
+
+    <img id="" src="images/icons/teufelsbruecke_blau_hq.png" alt="Turbine">
+
+  </div>
+
+  <!-- BRÜCKE -->
+  <div id="pin-bruecke-weiss" class="box pin-weiss" onclick="currentSlide(7)">
+
+    <img id="" src="images/icons/bruecke_weiss_hq.png" alt="Brunnen">
+
+  </div>
+
+  <div id="pin-bruecke-blau" class="box pin-blau hidden" onclick="currentSlide(7)">
+
+    <img id="" src="images/icons/bruecke_blau_hq.png" alt="Brunnen">
+
+  </div>
+
+  <!-- WANDERN -->
+  <!-- WANDERN -->
+  <!-- WANDERN -->
+  <!-- WANDERN -->
+
+  <div id="pin-wandern-leicht-weiss" class="box pin-weiss" onclick="currentSlide(8)">
+
+    <img id="" src="images/wandern_leicht_hover.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-leicht-blau" class="box pin-blau hidden" onclick="currentSlide(8)">
+
+    <img id="" src="images/wandern_leicht.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-mittel-weiss" class="box pin-weiss" onclick="currentSlide(9)">
+
+    <img id="" src="images/wandern_mittel_hover.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-mittel-blau" class="box pin-blau hidden" onclick="currentSlide(9)">
+
+    <img id="" src="images/wandern_mittel.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-schwer-weiss" class="box pin-weiss" onclick="currentSlide(10)">
+
+    <img id="" src="images/wandern_schwer_hover.png" alt="Wandern">
+
+  </div>
+
+  <div id="pin-wandern-schwer-blau" class="box pin-blau hidden" onclick="currentSlide(10)">
+
+    <img id="" src="images/wandern_schwer.png" alt="Wandern">
+
+  </div>
+
+</div> <!-- Ende MAP -->
+
+
+
+<!-- ENDEMAPMAPMAPMAP -->
+
+
+
+
+</div>
+<div id="right_map">
+  <!-- HIER GANZER SLIDER CODE -->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/Bahnhof_Weissenburg.jpg" alt="Bahnhof">
+
+      <div class="navigation">
+        <button class="button-nav" onclick="home()"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(1)"><i class="icon-time-warp"></i></button>
+      </div>
+
+      <div class="imgtext">
+
+        <h3>Wanderungen ab Bahnhof Weissenburg</h3>
+
+        <p>Mit der Erweiterung des Schienennetzes von Erlenbach bis Zweisimmen, wurde Weissenburg 1902 mit der Eisenbahn erschlossen.</p>
+
+        <p>Ausgehend vom Bahnhof Weissenburg, kann das Areal der historischen Bäder zu fuss erkundet und mit verschiedenen Wanderungen kombiniert werden.</p>
+
+        <p>Klicken Sie auf die Symbole auf der Karte, um die Region zu erkunden. Informationen zu Wanderungen und Führungen erhalten Sie über die Wandersymbole rechts oben an der Karte.</p>
+
+        <p>Das Bahnhofsgebäude ist grösstenteils im Originalzustand erhalten. Stündliche Verbindungen Richtung Spiez und Zweisimmen finden Sie auf <a target="_blank" href="https://www.sbb.ch/">sbb.ch</a></p>
+
+        <p>Parkplätze sind am Bahnhof ebenfalls vorhanden.</p>
+
+      </div>
+
+      <!-- <div><img class="maprailway" src="images/icons/zug_weiss_hq.png" alt="Bahnhof-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03507.jpg" alt="Brunnen">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(2)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Thermalwasser-Brunnen</h3>
+        Bei den beiden Brünnen kann das Heilwasser probiert
+        und mitgebrachte Trinkflaschen aufgefüllt werden.
+      </div>
+      <!-- <div><img class="mapbrunnen" src="images/icons/brunnen_weiss_hq.png" alt="Brunnen-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03523.jpg" alt="Kraftwerk">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(3)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Wasserschloss und Kleinwasserkraftwerk</h3>
+        1898 wurde am Buuschebach ein kleines Kraftwerk zur
+        Stromproduktion erstellt. 1999 wurde das Bauwerk saniert und teilweise neu aufgebaut.
+      </div>
+      <!-- <div><img class="mapkraftwerk" src="images/icons/turbine_weiss_hq.png" alt="Kraftwerk-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03531.jpg" alt="Vorderes Bad">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(4)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Vorderes Bad</h3>
+
+        <p>Die Küche des vorderen Bades ist restauriert worden
+          und kann von Besuchern besichtigt werden. </p>
+          <p>
+          Auch der Aussichtspunkt beim vorderen Bad ist noch heute intakt. </p> <p> Die Feuerstelle vor
+          der Ruine lädt zu einem gemütlichen Picknick ein.
+ </p>
+      </div>
+      <!-- <div><img class="mapvorderesbad" src="images/icons/vorderesbad_weiss_hq.png" alt="Vorderes Bad-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03625.jpg" alt="Hinteres Bad">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(5)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Hinteres Bad</h3>
+
+        <p>Die Überreste des Hinteren Bades wurden im Jahr 2014 saniert.
+          Heute können Besucher die eindrücklichen Grundmauern besichtigen und über Infotafeln und Fundstücke einen Blick in die Vergangenheit werfen.
+        </p>
+
+      </div>
+      <!-- <div><img class="maphinteresbad" src="images/icons/hinteresbad_weiss_hq.png" alt="Hinteres Bad-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03640.jpg" alt="Teufelsbrücke">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(6)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Teufelsbrücke</h3>
+        Die Teufelsbrücke überquert den Buschebach und führt zur Ruine der Kapelle.
+      </div>
+      <!-- <div><img class="mapteufelsbruecke" src="images/icons/teufelsbruecke_weiss_hq.png" alt="Teufelsbrücke-Icon"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/DSC03675-2.jpg" alt="Leiternweid">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+        <button class="button-nav" onclick="timewarp(7)"><i class="icon-time-warp"></i></button>
+      </div>
+      <div class="imgtext">
+        <h3>Hängebrücke Leiternweid</h3>
+        <p>Über Leitern und schmale Pfade wurden die Bäder Weissenburg mit Material und Nahrungsmitteln,
+          vor allem von der Alp Morgeten her, versorgt. </p> <p> Heute erschliesst die 111m
+            lange Hängebrücke, hoch über der Schlucht des Morgetenbachs, den Wanderweg
+            zu den Badruinen. Wer sich traut über die schwankende Brücke zu schreiten,
+            wird mit einem fabelhaften Ausblick belohnt.</p>
+      </div>
+      <!-- <div><img class="mapleiternweid" src="images/icons/bruecke_weiss_hq.png" alt="Leiternweid"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/wandern_2.jpg" alt="Wanderung2">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <!-- <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button> -->
+        <!-- <button class="button-nav"onclick="timewarp()"><i class="icon-time-warp"></i></button> -->
+      </div>
+      <div class="imgtext">
+        <h3>Wanderung Vorderes Bad</h3>
+        Ausgehend vom Bahnhof Weissenburg wandern sie ungefähr dreissig Minuten lang zum Areal des vorderen Bades.
+        Von dort aus können die umliegenden Ruinen erkundet werden. Ausserdem stehen Picknicktische und Grillstellen bereit.
+
+        <p>Dauer: 1 bis 1.5 Stunden</p>
+        <p>Anforderungen: Gutes Schuhwerk und dem Wetter angepasste Kleidung</p>
+        <p>Bei Interesse können ebenfalls Führungen über das Areal gebucht werden. Kontaktieren Sie uns.</p>
+
+      </div>
+      <!-- <div><img class="mapleiternweid" src="images/icons/bruecke_weiss_hq.png" alt="Leiternweid"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/wandern_3.jpg" alt="Leiternweid">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <!-- <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button> -->
+        <!-- <button class="button-nav"onclick="timewarp()"><i class="icon-time-warp"></i></button> -->
+      </div>
+      <div class="imgtext">
+        <h3>Wanderung Teufelsbrücke</h3>
+
+        <p>Ausgehend vom Bahnhof Weissenburg wandern Sie über das Areal des ehemaligen vorderen Bades dem Flusslauf lang aufwärts zur Teufelsbrücke.</p>
+
+        <p>Dauer: 1.5 bis 2 Stunden</p>
+        <p>Anforderungen: Gutes Schuhwerk und dem Wetter angepasste Kleidung</p>
+        <p>Bei Interesse können ebenfalls Führungen über das Areal gebucht werden. Kontaktieren Sie uns.</p>
+
+      </div>
+      <!-- <div><img class="mapleiternweid" src="images/icons/bruecke_weiss_hq.png" alt="Leiternweid"></div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <img class="sliderimg" src="images/wandern_img.jpg" alt="Leiternweid">
+      <div class="navigation">
+        <button class="button-nav"onclick="home()"><i class="icon-verein"></i></button>
+        <!-- <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button> -->
+        <!-- <button class="button-nav"onclick="timewarp()"><i class="icon-time-warp"></i></button> -->
+      </div>
+      <div class="imgtext">
+        <h3>Wanderung Leiternweid</h3>
+
+        <p>Ausgehend vom Bahnhof Weissenburg wandern Sie über das Areal der beiden ehemaligen Bäder dem Flusslauf lang aufwärts. Vom Hinteren Bad aus führen Sie steile Leitern hoch zur Leiternweid.
+          Eine über 100 Meter lange Hängebrücke verbindet dort die beiden Alpen.</p>
+
+        <p>Dauer: 2.5 bis 3 Stunden</p>
+        <p>Anforderungen: Gutes Schuhwerk und dem Wetter angepasste Kleidung</p>
+        <p>Bei Interesse können ebenfalls Führungen über das Areal gebucht werden. Kontaktieren Sie uns.</p>
+
+      </div>
+      <!-- <div><img class="mapleiternweid" src="images/icons/bruecke_weiss_hq.png" alt="Leiternweid"></div> -->
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center" class="hidden">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<footer>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>

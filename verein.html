@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Weissenburgbad - Wandererlebnis und Geschichte</title>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <link href="https://file.myfontastic.com/pH2BzsoWmoxMYNrptpPH35/icons.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+  integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+  crossorigin=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class = body_verein>
+
+  <div class="verein_logo">
+    <img class="verein_logo-image" src="images/Logo_2.png" width="20%" height="auto" alt="Logo">
+  </div>
+
+  <section class="verein_left_column">
+
+    <article class="verein_left_title">
+      <p>News</p>
+    </article>
+
+    <article class="mark_left_top"></article>
+
+    <article class="left_content">
+
+      <p class = "news_title">Einladung</p>
+
+      <p class = "news_subtitle">zum Arbeitseinsatz vom Samstag 21. April 2018 </p>
+
+      <p class = "news_text">Werte Mitglieder<br><br>
+        Der Winter hinterlässt auch dieses Jahr seine Spuren auf dem Areal der beiden Bäder und viele
+        kleinere und grössere Projekte können nur dank der tatkräftigen Mithilfe von Freiwilligen
+        realisiert werden. Deshalb laden wir Sie herzlich ein, uns an folgendem Datum zu unterstützen:<br><br>
+        Datum: Samstag, 21. April 2018
+        Treffpunkt: BLS-Haltestelle Weissenburg / Vorderes Bad Areal
+        Zeit: 09.00 Uhr / 09:30 Uhr
+        Der Winter hinterlässt auch dieses Jahr seine Spuren auf dem Areal der beiden Bäder und viele
+        kleinere und grössere Projekte können nur dank der tatkräftigen Mithilfe von Freiwilligen
+        realisiert werden. Deshalb laden wir Sie herzlich ein, uns an folgendem Datum zu unterstützen:<br><br>
+        Datum: Samstag, 21. April 2018
+        Treffpunkt: BLS-Haltestelle Weissenburg / Vorderes Bad Areal
+        Zeit: 09.00 Uhr / 09:30 Uhr
+        Der Winter hinterlässt auch dieses Jahr seine Spuren auf dem Areal der beiden Bäder und viele
+        kleinere und grössere Projekte können nur dank der tatkräftigen Mithilfe von Freiwilligen
+        realisiert werden. Deshalb laden wir Sie herzlich ein, uns an folgendem Datum zu unterstützen:<br><br>
+        Datum: Samstag, 21. April 2018
+        Treffpunkt: BLS-Haltestelle Weissenburg / Vorderes Bad Areal
+        Zeit: 09.00 Uhr / 09:30 Uhr </p>
+
+      </article>
+
+      <article class="mark_left_bot"></article>
+
+      <article class="left_footer">
+        <article class="verein_footer_margin">  </article>
+
+        <article class="verein_footer_content">
+
+          <!-- <div class = "arrow_left">
+          <img  class="image_arrow_left"src="images/arrow_green.png" alt="previous">
+        </div>
+
+        <div class="verein_footer_gap"></div>
+
+        <div class="verein_mapmark">
+        <a href="/wandern.html"><img class = "image_verein_mapmark" src="images/mapmark.png" alt="map"></a>
+      </div>
+
+      <div class="verein_footer_gap"></div>
+
+      <div class="verein_arrow_right">
+      <img class = "image_verein_arrow_right" src="images/arrow_green.png" alt="next">
+    </div> -->
+
+    <div class="navigation">
+      <button class="button-nav" onclick="home()"onclick="home()"><i class="icon-verein"></i></button>
+      <button class="button-nav"onclick="showmap()"><i class="fas fa-map-signs"></i></button>
+      <button class="button-nav"onclick="learnmore()"><i class="icon-read-more"></i></button>
+    </div>
+
+  </article>
+
+  <article class="verein_footer_margin">  </article>
+
+</article>
+
+</section>
+<section class = "verein_right_column">
+
+  <article class="verein_right_title">
+    <p>Verein</p>
+  </article>
+
+  <article class="mark_right_top"></article>
+
+  <article class="right_content">
+
+    <article class="verein_gap_title_right"></article>
+
+    <article class="gap_right_overform"></article>
+
+    <article class="verein_subtitle">Möchten Sie Mitglied werden?</article>
+
+    <article class="gap_right_overform2"></article>
+
+    <article class="verein_gap_title_right"></article>
+
+
+
+    <article class="verein_conditions">
+
+      <div class="conditions_margin_left"></div>
+
+      <img id="member-einzeln-weiss"class="member-weiss hidden" onclick="updatemember(1)" height="100%" src="images/Einzelmitglied_Weiss.png" alt="Einzelmitglied">
+      <img id="member-einzeln-blau" class="member-blau" onclick="" height="100%" src="images/einzelmitglied_blue.png" alt="Einzelmitglied">
+
+      <div class="conditions_gap"></div>
+
+      <img id="member-ehepaar-weiss"class="member-weiss" onclick="updatemember(2)" height="100%" src="images/ehepaar_white.png" alt="Ehepaar">
+      <img id="member-ehepaar-blau" class="member-blau hidden" onclick="" height="100%" src="images/ehepaar_blue.png" alt="Ehepaar">
+
+      <div class="conditions_gap"></div>
+
+      <img id="member-jurist-weiss"class="member-weiss" onclick="updatemember(3)" height="100%" src="images/jurist_white.png" alt="Gönner">
+      <img id="member-jurist-blau" class="member-blau hidden" onclick="" height="100%" src="images/jurist_blue.png" alt="Gönner">
+
+      <div class="conditions_gap"></div>
+
+      <img id="member-goenner-weiss"class="member-weiss" onclick="updatemember(4)" height="100%" src="images/goenner_white.png" alt="Gönner">
+      <img id="member-goenner-blau" class="member-blau hidden" onclick="" height="100%" src="images/goenner_blue.png" alt="Gönner">
+
+
+    </article>
+
+    <article class="gap_right_overform3"></article>
+
+
+    <article class="verein_form">
+
+      <article class="container_design">
+        <article class="shape_white_small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pro Jahr</article>
+        <article class="shape_blue">&nbsp;&nbsp;&nbsp;40CHF</article>
+      </article>
+
+      <article class="container_design">
+        <article class="shape_white"><input type="text" name="Name" value=""><br> </article>
+        <article class="shape_blue">&nbsp;&nbsp;&nbsp;Name</article>
+      </article>
+
+      <article class="container_design">
+        <article class="shape_white"><input type="text" name="Name" value=""><br> </article>
+        <article class="shape_blue">&nbsp;&nbsp;&nbsp;Adresse</article>
+      </article>
+
+      <article class="container_design">
+        <article class="shape_white"><input type="text" name="Name" value=""><br> </article>
+        <article class="shape_blue">&nbsp;&nbsp;&nbsp;PLZ/Ort</article>
+      </article>
+
+      <article class="container_design">
+        <article class="shape_white"><input type="text" name="Name" value=""><br> </article>
+        <article class="shape_blue">&nbsp;&nbsp;&nbsp;Email</article>
+      </article>
+
+      <article class="container_design">
+        <article class="shape_blue_small">&nbsp;&nbsp;&nbsp;Senden</article>
+      </article>
+
+    </article>
+
+  </article>
+
+  <article class="mark_right_bot"></article>
+
+  <article class="right_footer">
+
+    <p class = "verein_footer_text">Vielen Dank für Ihre Unterstützung.</p>
+
+  </article>
+
+</section>
+<script src="js/index_verein.js"></script>
+</body>
+</html>

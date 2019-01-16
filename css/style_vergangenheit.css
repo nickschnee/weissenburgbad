@@ -1,0 +1,252 @@
+body {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+a{
+  font-size: 3rem;
+  margin-top: 3%;
+  color:#d7dfc7;
+}
+
+.body_history{
+
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.verein_logo{
+  z-index: 9999;
+  position:absolute;
+  margin-left: 44%;
+  margin-top:25%;
+  opacity: 1;
+}
+
+.history_column_left{
+background: #7b9cbf;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.history_header_left{
+
+height: 10%;
+width: 100%;
+background: #7b9cbf;
+text-align: center;
+margin-bottom: 5%;
+
+}
+
+.history_header_left p{
+  font-size: 3rem;
+  margin-top: 3%;
+  color: white;
+}
+
+.history_gap_header_left{
+  height:2%;
+  width: 100%;
+  background: white;
+}
+
+.history_content_scroll{
+overflow-y:scroll;
+height: 88%;
+
+}
+
+.history_content_left{
+  font-size: 2rem;
+  margin-top: 3%;
+  color: white;
+  height: 100%;
+  width: 75%;
+  margin-left: 10%;
+}
+
+.history_content_titel{
+  font-size: 3rem;
+  margin-top: 3%;
+  color: white;
+}
+
+.history_column_right{
+  background: #7b9cbf;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.history_header_right{
+  height: 10%;
+  width: 100%;
+  background: #7b9cbf;
+  text-align: center;
+  margin-bottom: 5%;
+
+
+}
+
+.history_header_right p{
+  font-size: 3rem;
+  margin-top: 3%;
+  color:#ffffff;
+
+}
+
+.history_gap_header_right{
+  height:2%;
+  width: 100%;
+  background:#ffffff;
+}
+
+.history_content_right{
+  height: 78.4%;
+  width: 100%;
+}
+
+.history_footer_right{
+  height: 10%;
+  width: 100%;
+  background: #7b9cbf;
+  margin-left: 30%;
+}
+.history_footer_right{
+height: 10%;
+width: 50%;
+display: flex;
+
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  margin: none;
+  overflow: scroll;
+  height: 100vh;
+  /* margin: auto;
+  margin-left: auto;
+  margin-right: 20px; */
+
+}
+
+.sliderimg {
+  width: 100%;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.imgtext {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-top: 10px;
+  position: absolute;
+  text-align: left;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.button-nav {
+  background-color: #7C9DBD; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 2.5rem; /* Set a font size */
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: none;
+}
+
+
+
+
+
+
+
+/* END IMAGE SLIDER */
